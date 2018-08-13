@@ -14,6 +14,7 @@
 		0FBF89B121222917003ED57B /* BrandRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBF89B021222917003ED57B /* BrandRules.swift */; };
 		0FBF89B321222991003ED57B /* CardBrand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBF89B221222991003ED57B /* CardBrand.swift */; };
 		0FBF89B5212229C3003ED57B /* EvaluationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBF89B4212229C3003ED57B /* EvaluationError.swift */; };
+		0FBF89B721222B12003ED57B /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBF89B621222B12003ED57B /* Result.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +38,7 @@
 		0FBF89B021222917003ED57B /* BrandRules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandRules.swift; sourceTree = "<group>"; };
 		0FBF89B221222991003ED57B /* CardBrand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardBrand.swift; sourceTree = "<group>"; };
 		0FBF89B4212229C3003ED57B /* EvaluationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvaluationError.swift; sourceTree = "<group>"; };
+		0FBF89B621222B12003ED57B /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				0FBF89B021222917003ED57B /* BrandRules.swift */,
+				0FBF89B621222B12003ED57B /* Result.swift */,
 				0FBF89B221222991003ED57B /* CardBrand.swift */,
 				0FBF89B4212229C3003ED57B /* EvaluationError.swift */,
 			);
@@ -217,6 +220,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0FBF89AE21222842003ED57B /* Default.swift in Sources */,
+				0FBF89B721222B12003ED57B /* Result.swift in Sources */,
 				0FBF89B121222917003ED57B /* BrandRules.swift in Sources */,
 				0FBF89B5212229C3003ED57B /* EvaluationError.swift in Sources */,
 				0FBF89B321222991003ED57B /* CardBrand.swift in Sources */,
