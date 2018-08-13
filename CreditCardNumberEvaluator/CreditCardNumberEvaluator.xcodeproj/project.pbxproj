@@ -10,6 +10,10 @@
 		0FBF89982121C959003ED57B /* CreditCardNumberEvaluator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FBF898E2121C959003ED57B /* CreditCardNumberEvaluator.framework */; };
 		0FBF899D2121C959003ED57B /* CreditCardNumberEvaluatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBF899C2121C959003ED57B /* CreditCardNumberEvaluatorTests.swift */; };
 		0FBF899F2121C959003ED57B /* CreditCardNumberEvaluator.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FBF89912121C959003ED57B /* CreditCardNumberEvaluator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0FBF89AE21222842003ED57B /* Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBF89AD21222842003ED57B /* Default.swift */; };
+		0FBF89B121222917003ED57B /* BrandRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBF89B021222917003ED57B /* BrandRules.swift */; };
+		0FBF89B321222991003ED57B /* CardBrand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBF89B221222991003ED57B /* CardBrand.swift */; };
+		0FBF89B5212229C3003ED57B /* EvaluationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBF89B4212229C3003ED57B /* EvaluationError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +33,10 @@
 		0FBF89972121C959003ED57B /* CreditCardNumberEvaluatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CreditCardNumberEvaluatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FBF899C2121C959003ED57B /* CreditCardNumberEvaluatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardNumberEvaluatorTests.swift; sourceTree = "<group>"; };
 		0FBF899E2121C959003ED57B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0FBF89AD21222842003ED57B /* Default.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Default.swift; sourceTree = "<group>"; };
+		0FBF89B021222917003ED57B /* BrandRules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandRules.swift; sourceTree = "<group>"; };
+		0FBF89B221222991003ED57B /* CardBrand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardBrand.swift; sourceTree = "<group>"; };
+		0FBF89B4212229C3003ED57B /* EvaluationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvaluationError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +80,8 @@
 			isa = PBXGroup;
 			children = (
 				0FBF89912121C959003ED57B /* CreditCardNumberEvaluator.h */,
+				0FBF89AD21222842003ED57B /* Default.swift */,
+				0FBF89AF212228FA003ED57B /* Models */,
 				0FBF89922121C959003ED57B /* Info.plist */,
 			);
 			path = CreditCardNumberEvaluator;
@@ -84,6 +94,16 @@
 				0FBF899E2121C959003ED57B /* Info.plist */,
 			);
 			path = CreditCardNumberEvaluatorTests;
+			sourceTree = "<group>";
+		};
+		0FBF89AF212228FA003ED57B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0FBF89B021222917003ED57B /* BrandRules.swift */,
+				0FBF89B221222991003ED57B /* CardBrand.swift */,
+				0FBF89B4212229C3003ED57B /* EvaluationError.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,6 +216,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FBF89AE21222842003ED57B /* Default.swift in Sources */,
+				0FBF89B121222917003ED57B /* BrandRules.swift in Sources */,
+				0FBF89B5212229C3003ED57B /* EvaluationError.swift in Sources */,
+				0FBF89B321222991003ED57B /* CardBrand.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,6 +418,7 @@
 		0FBF89A62121C959003ED57B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WLH7AQNPBD;
@@ -415,6 +440,7 @@
 		0FBF89A72121C959003ED57B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WLH7AQNPBD;
