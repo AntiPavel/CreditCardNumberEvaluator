@@ -9,6 +9,7 @@
 import Foundation
 
 public struct Default {
+    static public let kCustomBrand = "Custom Brand"
     static public let rules = [BrandRules(defaultCardBrand: .visa, range: (400000...499999).nsRange),
                                BrandRules(defaultCardBrand: .mastercard, range: (222100...272099).nsRange),
                                BrandRules(defaultCardBrand: .mastercard, range: (510000...559999).nsRange),
@@ -21,9 +22,9 @@ public struct Default {
     static public let priority = 0
 }
 
-extension CountableClosedRange where Bound == Int {
+public extension CountableClosedRange where Bound == Int {
     var nsRange:NSRange {
         return NSRange(location: lowerBound,
-                       length: upperBound - lowerBound)
+                       length: upperBound - lowerBound + 1)
     }
 }

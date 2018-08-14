@@ -28,7 +28,7 @@ import Foundation
         self.range = range
         self.priority = priority
         self.customCardBrand = customCardBrand ??
-                            (defaultCardBrand == .none ? "Custom brand" : customCardBrand)
+                            (defaultCardBrand == .none ? Default.kCustomBrand : customCardBrand)
         super.init()
     }
 }

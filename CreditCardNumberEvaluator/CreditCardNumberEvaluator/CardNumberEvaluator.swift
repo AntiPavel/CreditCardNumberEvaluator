@@ -39,6 +39,7 @@ import Foundation
         guard !isZero else { return  Result(error: .leadingZero) }
         
         let filteredByLength = filterByLength(brand, rules: rules)
+        guard !filteredByLength.isEmpty else { return Result(error: .wrongLengh) }
         let filteredByFirstDigits = filterByFirstDigits(brand, rules: filteredByLength)
         guard let rule = filteredByFirstDigits.first else { return Result(error: .unknownBrand) }
         
@@ -86,7 +87,18 @@ public extension Array where Element == Result {
 
 private extension String {
     var isNumeric: Bool {
-        return Int(self) != nil
+        return checkIfNumeric(self)
+    }
+    
+    private func checkIfNumeric(_ string: String) -> Bool {
+        
+        var numeric = true
+        if string.count > 18 {  //the Int max value is 9223372036854775807 so if we got an 19th characters string we should split it
+            numeric = (checkIfNumeric(String(string.prefix(18))) && checkIfNumeric(String(string.dropFirst(18))))
+        } else {
+            numeric = (numeric && Int(string) != nil )
+        }
+        return numeric
     }
     
     var hasLeadingZero: Bool? {
