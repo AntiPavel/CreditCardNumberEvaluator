@@ -9,25 +9,26 @@
 import Foundation
 
 @objc public final class BrandRules: NSObject {
-    private(set) var numderOfDigitsToRecognize: Int
-    private(set) var length: CountableClosedRange<Int>
-    private(set) var range: CountableClosedRange<Int>
-    private(set) var defaultCardBrand: CardBrand
-    private(set) var priority: Int
-    private(set) var customCardBrand: String?
+    @objc public private(set) var numderOfDigitsToRecognize: Int
+    @objc public private(set) var length: NSRange
+    @objc public private(set) var range: NSRange
+    @objc public private(set) var defaultCardBrand: CardBrand
+    @objc public private(set) var priority: Int
+    @objc public private(set) var customCardBrand: String?
     
-    public init(numderOfDigitsToRecognize: Int = Default.numderOfDigitsToRecognize,
-                length: CountableClosedRange<Int> = Default.length,
+    @objc public init(numderOfDigitsToRecognize: Int = Default.numderOfDigitsToRecognize,
+                length: NSRange = Default.length,
                 defaultCardBrand: CardBrand,
                 customCardBrand: String? = nil,
-                range: CountableClosedRange<Int>,
+                range: NSRange,
                 priority: Int = Default.priority) {
         self.numderOfDigitsToRecognize = numderOfDigitsToRecognize
         self.length = length
         self.defaultCardBrand = defaultCardBrand
         self.range = range
         self.priority = priority
-        self.customCardBrand = defaultCardBrand == .none ? "Custom brand" : customCardBrand
+        self.customCardBrand = customCardBrand ??
+                            (defaultCardBrand == .none ? "Custom brand" : customCardBrand)
         super.init()
     }
 }

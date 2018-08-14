@@ -7,11 +7,11 @@
 //
 
 @objc public final class Result: NSObject {
-    let isValid: Bool
-    let error: EvaluationError?
-    let cardBrand: String?
+    @objc public private(set) var isValid: Bool
+    @objc public private(set) var error: EvaluationError
+    @objc public private(set) var cardBrand: String?
     
-    public init(isValid: Bool = false, error: EvaluationError? = nil, cardBrand: String? = nil) {
+    @objc public init(isValid: Bool = false, error: EvaluationError = .none, cardBrand: String? = nil) {
         self.isValid = isValid
         self.error = error
         self.cardBrand = cardBrand

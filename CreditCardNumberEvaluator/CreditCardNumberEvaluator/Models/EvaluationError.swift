@@ -7,6 +7,7 @@
 //
 
 @objc public enum EvaluationError: Int {
+    case none = -1
     case wrongLengh
     case nonNumeric
     case leadingZero
