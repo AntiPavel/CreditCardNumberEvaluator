@@ -15,6 +15,7 @@
 		0FBF89B321222991003ED57B /* CardBrand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBF89B221222991003ED57B /* CardBrand.swift */; };
 		0FBF89B5212229C3003ED57B /* EvaluationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBF89B4212229C3003ED57B /* EvaluationError.swift */; };
 		0FBF89B721222B12003ED57B /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBF89B621222B12003ED57B /* Result.swift */; };
+		0FBF89B921222BD3003ED57B /* CardNumberEvaluator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBF89B821222BD3003ED57B /* CardNumberEvaluator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +40,7 @@
 		0FBF89B221222991003ED57B /* CardBrand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardBrand.swift; sourceTree = "<group>"; };
 		0FBF89B4212229C3003ED57B /* EvaluationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvaluationError.swift; sourceTree = "<group>"; };
 		0FBF89B621222B12003ED57B /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		0FBF89B821222BD3003ED57B /* CardNumberEvaluator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardNumberEvaluator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 			children = (
 				0FBF89912121C959003ED57B /* CreditCardNumberEvaluator.h */,
 				0FBF89AD21222842003ED57B /* Default.swift */,
+				0FBF89B821222BD3003ED57B /* CardNumberEvaluator.swift */,
 				0FBF89AF212228FA003ED57B /* Models */,
 				0FBF89922121C959003ED57B /* Info.plist */,
 			);
@@ -223,6 +226,7 @@
 				0FBF89B721222B12003ED57B /* Result.swift in Sources */,
 				0FBF89B121222917003ED57B /* BrandRules.swift in Sources */,
 				0FBF89B5212229C3003ED57B /* EvaluationError.swift in Sources */,
+				0FBF89B921222BD3003ED57B /* CardNumberEvaluator.swift in Sources */,
 				0FBF89B321222991003ED57B /* CardBrand.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -379,6 +383,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = CreditCardNumberEvaluator/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -406,6 +411,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = CreditCardNumberEvaluator/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
