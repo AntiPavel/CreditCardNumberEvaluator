@@ -1,0 +1,11 @@
+framework module CreditCardNumberEvaluator {
+  umbrella header "CreditCardNumberEvaluator.h"
+
+  export *
+  module * { export * }
+}
+
+module CreditCardNumberEvaluator.Swift {
+    header "CreditCardNumberEvaluator-Swift.h"
+    requires objc
+}
